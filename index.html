@@ -16,14 +16,39 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", () => {
+        const aside = document.querySelector(".aside");
+        const closeMenuBtn = document.querySelector("#close-menu");
+        const openMenuBtn = document.querySelector("#open-menu");
+        const overlay = document.querySelector(".overlay");
+        console.log(openMenuBtn);
+        closeMenuBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          let asideDS = aside.dataset;
+          asideDS.close =
+            asideDS.close === "true" || !asideDS.close ? "false" : "true";
+          overlay.dataset.menuOpen = "false";
+        });
+
+        openMenuBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          let asideDS = aside.dataset;
+          asideDS.close =
+            asideDS.close === "true" || !asideDS.close ? "false" : "true";
+          console.log(overlay);
+          overlay.dataset.menuOpen = "true";
+        });
+      });
+    </script>
   </head>
   <body>
     <header class="header">
-      <a href="#">
+      <a>
         <img src="./assets/images/logo.svg" width="46px" alt="logo" />
       </a>
-      <a href="#">
-        <img src="./assets/images/icon-menu.svg" alt="menu" />
+      <a>
+        <img src="./assets/images/icon-menu.svg" alt="menu" id="open-menu" />
       </a>
     </header>
     <main>
@@ -100,7 +125,18 @@
         </ul>
       </section>
     </main>
-
+    <aside class="aside">
+      <div>
+        <img src="./assets/images/icon-menu-close.svg" alt="" id="close-menu" />
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+    </aside>
     <footer class="attribution">
       <div>
         Challenge by
@@ -112,5 +148,6 @@
         Coded by <a href="https://github.com/bytesbanana">Saharat Paynok</a>.
       </div>
     </footer>
+    <div class="overlay" data-menu-open="false"></div>
   </body>
 </html>
