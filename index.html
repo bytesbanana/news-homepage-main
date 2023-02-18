@@ -22,7 +22,7 @@
         const closeMenuBtn = document.querySelector("#close-menu");
         const openMenuBtn = document.querySelector("#open-menu");
         const overlay = document.querySelector(".overlay");
-        console.log(openMenuBtn);
+
         closeMenuBtn.addEventListener("click", (e) => {
           e.preventDefault();
           let asideDS = aside.dataset;
@@ -125,7 +125,7 @@
         </ul>
       </section>
     </main>
-    <aside class="aside">
+    <aside class="aside" data-close="true">
       <div>
         <img src="./assets/images/icon-menu-close.svg" alt="" id="close-menu" />
         <ul>

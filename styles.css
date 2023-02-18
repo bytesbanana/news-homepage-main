@@ -160,11 +160,11 @@ aside {
   transition: right cubic-bezier(0.23, 1, 0.32, 1) 300ms;
 }
 
-aside[data-close="true"] {
+aside[data-close="false"] {
   right: 0;
 }
 
-aside[data-close="false"] {
+aside[data-close="true"] {
   right: -100%;
 }
 
@@ -192,4 +192,8 @@ aside ul {
 aside li {
   text-align: start;
   font-size: 1.15rem;
+}
+aside li:active,
+li:hover {
+  color: hsl(5, 85%, 63%);
 }
