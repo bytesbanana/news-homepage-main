@@ -43,111 +43,33 @@
     </script>
   </head>
   <body>
-    <header class="header">
-      <a>
-        <img src="./assets/images/logo.svg" width="46px" alt="logo" />
-      </a>
-      <a>
-        <img src="./assets/images/icon-menu.svg" alt="menu" id="open-menu" />
-      </a>
-    </header>
-    <main>
-      <section class="articles">
-        <section class="card">
-          <img
-            src="./assets/images/image-web-3-mobile.jpg"
-            alt="web-3"
-            width="343"
-            height="300"
-          />
+    <section class="container">
+      <header class="header">
+        <a href="#">
+          <img class="logo" src="./assets/images/logo.svg" width="46px" alt="logo" />
+        </a>
+        <a class="menu" >
+          <img src="./assets/images/icon-menu.svg" alt="menu" />
+        </a>
+        <nav class="menu">
+          <a href="#">Home</a>
+          <a href="#">New</a>
+          <a href="#">Popular</a>
+          <a href="#">Trending</a>
+          <a href="#">Categories</a>
+        </nav>
+      </header>
+
+      <section class="feature-article">
+        <img class="mobile" src="./assets/images/image-web-3-mobile.jpg" alt="feature article" >
+        <img class="desktop" src="./assets/images/image-web-3-desktop.jpg" alt="feature article" >
+        <div>
           <h1>The Bright Future of Web 3.0?</h1>
-          <p>
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <button>Read more</button>
-        </section>
+          <div class="feature-article__content">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+            <button>READ MORE</button>
+          </div>
+        </div>
       </section>
-
-      <section class="new-articles">
-        <ul>
-          <h1>New</h1>
-          <li>
-            <h2>Hydrogen VS Electric Cars</h2>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </li>
-          <hr />
-          <li>
-            <h2>The Downsides of AI Artistry</h2>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </li>
-          <hr />
-          <li>
-            <h2>Is VC Funding Drying Up?</h2>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section class="feature-articles">
-        <ul>
-          <li>
-            <img src="./assets/images/image-retro-pcs.jpg" alt="" />
-            <div>
-              <h1>01</h1>
-              <h2>Reviving Retro PCs</h2>
-              <p>What happens when old PCs are given modern upgrades?</p>
-            </div>
-          </li>
-          <li>
-            <img src="./assets/images/image-top-laptops.jpg" alt="" />
-            <div>
-              <h1>02</h1>
-              <h2>Top 10 Laptops of 2022</h2>
-              <p>Our best picks for various needs and budgets.</p>
-            </div>
-          </li>
-
-          <li>
-            <img src="./assets/images/image-gaming-growth.jpg" alt="" />
-            <div>
-              <h1>03</h1>
-              <h2>The Growth of Gaming</h2>
-              <p>How the pandemic has sparked fresh opportunities.</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <aside class="aside" data-close="true">
-      <div>
-        <img src="./assets/images/icon-menu-close.svg" alt="" id="close-menu" />
-        <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
-        </ul>
-      </div>
-    </aside>
-    <footer class="attribution">
-      <div>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor</a
-        >.
-      </div>
-      <div>
-        Coded by <a href="https://github.com/bytesbanana">Saharat Paynok</a>.
-      </div>
-    </footer>
-    <div class="overlay" data-menu-open="false"></div>
-  </body>
+    </section>
 </html>
