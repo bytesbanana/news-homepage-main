@@ -99,7 +99,7 @@ section.feature-article button:hover {
 section.new-articles {
   margin-top: 4rem;
   padding: 1rem;
-  background-color: hsl(240, 100%, 1%);
+  background-color: #00001a;
 }
 
 section.new-articles h1 {
@@ -157,7 +157,6 @@ section.new-articles h1 {
   }
   section.feature-article {
     margin-top: 0;
-    flex: 65;
   }
   section.feature-article button {
     margin-top: 2.375rem;
@@ -185,8 +184,11 @@ section.new-articles h1 {
     padding-top: 2rem;
   }
   section.new-articles {
-    flex: 35;
+    width: 660px;
     margin-top: 0;
-    padding: 1.5rem 2rem;
+    padding: 2rem 1.5rem;
+  }
+  .new-articles .article p {
+    line-height: 2rem;
   }
 }
