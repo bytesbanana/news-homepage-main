@@ -36,7 +36,7 @@
           let asideDS = aside.dataset;
           asideDS.close =
             asideDS.close === "true" || !asideDS.close ? "false" : "true";
-          console.log(overlay);
+
           overlay.dataset.menuOpen = "true";
         });
       });
@@ -46,9 +46,14 @@
     <section class="container">
       <header class="header">
         <a href="#">
-          <img class="logo" src="./assets/images/logo.svg" width="46px" alt="logo" />
+          <img
+            class="logo"
+            src="./assets/images/logo.svg"
+            width="46px"
+            alt="logo"
+          />
         </a>
-        <a class="menu" >
+        <a class="menu">
           <img src="./assets/images/icon-menu.svg" alt="menu" />
         </a>
         <nav class="menu">
@@ -60,16 +65,60 @@
         </nav>
       </header>
 
-      <section class="feature-article">
-        <img class="mobile" src="./assets/images/image-web-3-mobile.jpg" alt="feature article" >
-        <img class="desktop" src="./assets/images/image-web-3-desktop.jpg" alt="feature article" >
-        <div>
-          <h1>The Bright Future of Web 3.0?</h1>
-          <div class="feature-article__content">
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-            <button>READ MORE</button>
+      <div class="hero-articles">
+        <section class="feature-article">
+          <img
+            class="mobile"
+            src="./assets/images/image-web-3-mobile.jpg"
+            alt="feature article"
+          />
+          <img
+            class="desktop"
+            src="./assets/images/image-web-3-desktop.jpg"
+            alt="feature article"
+          />
+          <div>
+            <h1>The Bright Future of Web 3.0?</h1>
+            <div class="feature-article__content">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button>READ MORE</button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="new-articles">
+          <h1>New</h1>
+          <ul class="new-articles-list">
+            <li>
+              <div class="article">
+                <h1>Hydrogen VS Electric Cars</h1>
+                <p>Will hydrogen-fluled cars ever catch up to EVs?</p>
+              </div>
+            </li>
+            <li>
+              <div class="article">
+                <h1>The Downsides of AI Artistry</h1>
+                <p>
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="article">
+                <h1>Is VC Funding Drying Up?</h1>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </section>
+  </body>
 </html>
